@@ -1,0 +1,3 @@
+package: github.com/remerge/go-env
+import:
+- package: github.com/spf13/pflag
