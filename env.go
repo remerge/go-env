@@ -1,10 +1,16 @@
 package env
 
-import "os"
+import (
+	"os"
+
+	"github.com/bobziuchkovski/cue"
+)
 
 const Key = "GO_ENV"
 
 var Env string
+
+var log = cue.NewLogger("env")
 
 func init() {
 	Set(os.Getenv(Key))
@@ -15,8 +21,13 @@ func Set(name string) {
 		name = "development"
 	}
 
+	log.WithFields(cue.Fields{
+		"old": Env,
+		"new": name,
+	}).Debug("set")
+
 	if err := os.Setenv(Key, name); err != nil {
-		panic(err)
+		log.Panic(err, "failed to set env")
 	} else {
 		Env = name
 	}
