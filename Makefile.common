@@ -30,6 +30,9 @@ all: build
 build: fmt
 	cd $(GOSRCDIR) && \
 		CGO_ENABLED=0 \
+		go test -v -i
+	cd $(GOSRCDIR) && \
+		CGO_ENABLED=0 \
 		go build -v -i -ldflags "$(LDFLAGS)" $(MAINGO)
 
 run: build
