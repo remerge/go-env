@@ -1,6 +1,9 @@
 hash: 2a8634667f875b174424eb4d6a93db02957d6f82034ce405aacd996d88ec6987
-updated: 2017-04-16T14:28:53.673036904Z
+updated: 2017-04-25T10:01:04.00427954Z
 imports:
 - name: github.com/bobziuchkovski/cue
   version: 852726be06b5c373580e50301c29f53f642f65ec
+  subpackages:
+  - collector
+  - format
 testImports: []
