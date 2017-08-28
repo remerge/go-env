@@ -3,7 +3,7 @@ package env
 import (
 	"os"
 
-	"github.com/bobziuchkovski/cue"
+	"github.com/remerge/cue"
 )
 
 // Key is the OS environment variable that holds the environment name.

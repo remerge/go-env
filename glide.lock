@@ -1,8 +1,8 @@
-hash: 2a8634667f875b174424eb4d6a93db02957d6f82034ce405aacd996d88ec6987
-updated: 2017-06-29T18:03:47.889670589Z
+hash: 629ac030993d2e81ced68328285d4baba8a5876de4d4f52342e8a5bde2345162
+updated: 2017-08-28T21:16:59.041705729+02:00
 imports:
-- name: github.com/bobziuchkovski/cue
-  version: 852726be06b5c373580e50301c29f53f642f65ec
+- name: github.com/remerge/cue
+  version: 69c896c02169b211510320825b6ef71ab62e579f
   subpackages:
   - collector
   - format
