@@ -1,3 +1,0 @@
-package: github.com/remerge/go-env
-import:
-- package: github.com/remerge/cue

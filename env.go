@@ -31,9 +31,8 @@ func Set(name string) {
 
 	if err := os.Setenv(Key, name); err != nil {
 		log.Panic(err, "failed to set env")
-	} else {
-		Env = name
 	}
+	Env = name
 }
 
 // IsProd returns true if the current environment is `production` or `prod`.
