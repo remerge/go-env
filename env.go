@@ -30,7 +30,9 @@ func Set(name string) {
 	}).Debug("set")
 
 	if err := os.Setenv(Key, name); err != nil {
+		//revive:disable:deep-exit
 		log.Panic(err, "failed to set env")
+		//revive:enable:deep-exit
 	}
 	Env = name
 }
