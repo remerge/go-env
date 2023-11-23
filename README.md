@@ -1,12 +1,6 @@
-# go-env
+# Global Env for Go
 
 Package `env` provides a global `Env` variable, similar to `Rails.env`.
-
-## Install
-
-```bash
-go get github.com/remerge/go-env
-```
 
 ## Usage
 
@@ -14,11 +8,11 @@ go get github.com/remerge/go-env
 package main
 
 import (
-	"fmt"
-	"github.com/remerge/go-env"
+  "fmt"
+  "github.com/remerge/go-env"
 )
 
 func main() {
-	fmt.Println(env.Env)
+  fmt.Println(env.Env)
 }
 ```
