@@ -37,9 +37,9 @@ func Set(name string) {
 	Env = name
 }
 
-// IsProd returns true if the current environment is `production` or `prod`.
+// IsProd returns true if the current environment is `production` or `prod` or `divert`.
 func IsProd() bool {
-	return Env == "production" || Env == "prod"
+	return Env == "production" || Env == "prod" || Env == "divert"
 }
 
 // IsDevel returns true if the current environment is `development`, `devel` or
